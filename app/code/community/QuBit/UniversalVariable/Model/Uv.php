@@ -22,7 +22,7 @@ class QuBit_UniversalVariable_Model_Uv extends Varien_Object
      * @var string
      * @url http://tools.qubitproducts.com/uv/developers/specification
      */
-    protected $_version = "1.3.0";
+    protected $_version = "1.2.2";
 
     protected function _construct()
     {
@@ -144,7 +144,6 @@ class QuBit_UniversalVariable_Model_Uv extends Varien_Object
         }
 
         $data['customer_group'] = Mage::getSingleton('customer/session')->getCustomerGroupId();
-
         $data['returning'] = $user->getId() ? true : false;
         $data['language'] = Mage::getStoreConfig('general/locale/code');
 

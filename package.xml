@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
     <name>QuBit_UniversalVariable</name>
-    <version>1.3.0</version>
+    <version>1.3.1</version>
     <stability>stable</stability>
     <license uri="http://www.opensource.org/licenses/osl-3.0.php">Extension license name (OSL v3.0)</license>
     <channel>community</channel>
@@ -10,25 +10,13 @@
     <description>Universal Variable provides a standardised JSON structure for data relating to the user journey of your visitors, such user details, products viewed and transactions. Data contained in Universal Variable are pushed automatically to Qubit&#x2019;s platform and Opentag scripts.&#xD;
 &#xD;
 This extension plugs into your Magento installation and automatically inserts Universal Variable and Opentag to the top of your pages, taking away 99% of the development work of implementing Universal Variable on your site.</description>
-    <notes>Refactored [Thanks firewizard]&#xD;
+    <notes>The universal_variable was duplicated on window scope under window.uv and window.universal_variable.&#xD;
 &#xD;
-Magento version is now under a flag [security by obscurity]&#xD;
-&#xD;
-Options for hiding stock information, using real product IDs and the product id (database entry id) &#xD;
-&#xD;
-Flag to either user real User ID or a hashed version of it&#xD;
-&#xD;
-Product line_items&#xD;
-&#xD;
-Makes sure there is a valid delivery address to stop confirmation page error.&#xD;
-&#xD;
-user has_transacted&#xD;
-&#xD;
-updated branding from QuBit to Qubit</notes>
+You should only require an update if you are using other Qubit platform technologies.</notes>
     <authors><author><name>Callum Rogan</name><user>rogy</user><email>callum@qubitproducts.com</email></author></authors>
-    <date>2015-01-30</date>
-    <time>12:40:44</time>
-    <contents><target name="magecommunity"><dir name="QuBit"><dir name="UniversalVariable"><dir name="Helper"><file name="Data.php" hash="20ee1c7742638407ae4fc5d4119efb4e"/></dir><dir name="Model"><file name="Observer.php" hash="928c127e4468dc4316ce124dc5711c33"/><file name="Uv.php" hash="8b4ad81aff8955138de89a7ba03dfb23"/></dir><dir name="etc"><file name="adminhtml.xml" hash="e708e1e94c34a3d0340b2c26d142b938"/><file name="config.xml" hash="5c9cb4ad71799e842799cba5130dc219"/><file name="system.xml" hash="d6f80fb4487a5e73de6886d2c909f90d"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="QuBit_UniversalVariable.xml" hash="78415ff310ffbb380e1a95633caf4926"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="template"><dir name="qubit"><file name="uv.phtml" hash="3b639da939fde63dafc3a8ff956e140d"/></dir></dir><dir name="layout"><dir name="qubit"><file name="uv.xml" hash="149b99e8bc633f90cef5700301e12590"/></dir></dir></dir></dir></dir></target><target name="magelocale"><dir name="en_US"><file name="QuBit_UniversalVariable.csv" hash="db8b84cbc643341df36f2ba05275ef71"/></dir></target></contents>
+    <date>2015-06-11</date>
+    <time>12:45:41</time>
+    <contents><target name="magecommunity"><dir name="QuBit"><dir name="UniversalVariable"><dir name="Helper"><file name="Data.php" hash="20ee1c7742638407ae4fc5d4119efb4e"/></dir><dir name="Model"><file name="Observer.php" hash="928c127e4468dc4316ce124dc5711c33"/><file name="Uv.php" hash="0893547eceef00d8b3de6eda73cea561"/></dir><dir name="etc"><file name="adminhtml.xml" hash="e708e1e94c34a3d0340b2c26d142b938"/><file name="config.xml" hash="371e38368d8a59fcf9c4f67ab813ec73"/><file name="system.xml" hash="d6f80fb4487a5e73de6886d2c909f90d"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="QuBit_UniversalVariable.xml" hash="78415ff310ffbb380e1a95633caf4926"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="template"><dir name="qubit"><file name="uv.phtml" hash="c2e5dedd211cd235401df4db7f726f33"/></dir></dir><dir name="layout"><dir name="qubit"><file name="uv.xml" hash="149b99e8bc633f90cef5700301e12590"/></dir></dir></dir></dir></dir></target><target name="magelocale"><dir name="en_US"><file name="QuBit_UniversalVariable.csv" hash="db8b84cbc643341df36f2ba05275ef71"/></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.1.0</min><max>6.0.1</max></php></required></dependencies>
 </package>
