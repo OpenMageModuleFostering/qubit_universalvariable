@@ -141,8 +141,11 @@ class QuBit_UniversalVariable_Model_Page_Observer {
   public function _getLineItems($items) {
     $line_items = array();
     foreach($items as $item) {
-      $product = $item->getProduct();
-      if ($product->isVisibleInSiteVisibility()) {
+      // backwards compaibility, getProduct() is not supported in older version
+      $productId = $item->getProductId();
+      $product   =  Mage::getModel('catalog/product')->load($productId);
+
+      if ($product && $product->isVisibleInSiteVisibility()) {
         $litem_model = array();
         $litem_model['product'] = $this->_getProductModel($product);
         $litem_model['quantity'] = $item->getQty();
@@ -156,8 +159,11 @@ class QuBit_UniversalVariable_Model_Page_Observer {
   public function _getInvoicedLineItems($items) {
     $line_items = array();
     foreach($items as $item) {
-      $product = $item->getProduct();
-      if ($product->isVisibleInSiteVisibility()) {
+      // backwards compaibility, getProduct() is not supported in older version
+      $productId = $item->getProductId();
+      $product   =  Mage::getModel('catalog/product')->load($productId);
+      
+      if ($product && $product->isVisibleInSiteVisibility()) {
         $litem_model = array();
         $litem_model['product'] = $this->_getProductModel($product);
         $litem_model['quantity'] = (float) $item->getQtyOrdered();
@@ -234,6 +240,10 @@ class QuBit_UniversalVariable_Model_Page_Observer {
 
   public function getListing() {
     return $this->_listing;
+  }
+
+  public function getMageVersion() {
+    return Mage::getVersion();
   }
 }
 ?>
