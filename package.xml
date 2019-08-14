@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
     <name>QuBit_UniversalVariable</name>
-    <version>1.0.12</version>
+    <version>1.0.13</version>
     <stability>stable</stability>
     <license uri="http://www.opensource.org/licenses/osl-3.0.php">Extension license name (OSL v3.0)</license>
     <channel>community</channel>
@@ -12,11 +12,11 @@
     <description>QuBit OpenTag recommends creating the releavant JavaScript object on your page prior to the OpenTag container script. This will assure the values are present on the page when a script tries to access them.&#xD;
 &#xD;
 If a page does not have the variables of an object that are mentioned below, simply do not even declare them. For example, if your pages only have category and no subcategory, just declare your category. Likewise, if you feel the need to extend the objects below or feel like renaming them, please do so. However, please take a note of the new variable names or the edited ones, because in order to access them from your scripts in your OpenTag container, you will need to use the new variable names.</description>
-    <notes>template bug fixes</notes>
+    <notes>Added `voucher_discount` in transaction</notes>
     <authors><author><name>Jing Dong</name><user>qubitproducts</user><email>jing@qubitdigital.com</email></author></authors>
-    <date>2013-01-31</date>
-    <time>09:27:32</time>
-    <contents><target name="magelocal"><dir name="QuBit"><dir name="UniversalVariable"><dir name="Block"><file name="Uv.php" hash="9b5cd71bebc9576b5d0714b3fe5c13bb"/></dir><dir name="Helper"><file name="Data.php" hash="b05ea847c16520d5e6eec91e9f604886"/></dir><dir name="Model"><dir name="Page"><file name="Observer.php" hash="a3ff35ccc43874a92c1b38b81ad4f7d1"/></dir><file name=".DS_Store" hash="194577a7e20bdcc7afbb718f502c134c"/></dir><dir name="etc"><file name="config.xml" hash="fd936ed3360902482e81d86b6747543c"/><file name="system.xml" hash="944a9a1ca7984eae63f1e2e0800404f9"/><file name=".DS_Store" hash="194577a7e20bdcc7afbb718f502c134c"/></dir><file name=".DS_Store" hash="194577a7e20bdcc7afbb718f502c134c"/></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="default"><dir name="layout"><dir name="qubit"><file name="universal_variable.xml" hash="f568ad884f941850720324d35868c45c"/><file name=".DS_Store" hash="2632898af4a7dd21eb81072ff8eb1f04"/></dir></dir><dir name="template"><dir name="qubit"><file name="universal_variable.phtml" hash="e3447f28b40796085ee2febb15da6fef"/><file name=".DS_Store" hash="194577a7e20bdcc7afbb718f502c134c"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="QuBit_all.xml" hash="549545c1cf35f87658a129ad5093d13f"/></dir></target></contents>
+    <date>2013-02-12</date>
+    <time>11:42:54</time>
+    <contents><target name="magelocal"><dir name="QuBit"><dir name="UniversalVariable"><dir name="Block"><file name="Uv.php" hash="9b5cd71bebc9576b5d0714b3fe5c13bb"/></dir><dir name="Helper"><file name="Data.php" hash="b05ea847c16520d5e6eec91e9f604886"/></dir><dir name="Model"><dir name="Page"><file name="Observer.php" hash="a72392c9b0d2d4006166d94dd68de78d"/></dir><file name=".DS_Store" hash="194577a7e20bdcc7afbb718f502c134c"/></dir><dir name="etc"><file name="config.xml" hash="fd936ed3360902482e81d86b6747543c"/><file name="system.xml" hash="944a9a1ca7984eae63f1e2e0800404f9"/><file name=".DS_Store" hash="194577a7e20bdcc7afbb718f502c134c"/></dir><file name=".DS_Store" hash="194577a7e20bdcc7afbb718f502c134c"/></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="default"><dir name="layout"><dir name="qubit"><file name="universal_variable.xml" hash="f568ad884f941850720324d35868c45c"/><file name=".DS_Store" hash="2632898af4a7dd21eb81072ff8eb1f04"/></dir></dir><dir name="template"><dir name="qubit"><file name="universal_variable.phtml" hash="67e5965b455c5fc56217d621118ec147"/><file name=".DS_Store" hash="194577a7e20bdcc7afbb718f502c134c"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="QuBit_all.xml" hash="549545c1cf35f87658a129ad5093d13f"/></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
 </package>
