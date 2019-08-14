@@ -3,7 +3,7 @@
   <modules>
     <QuBit_UniversalVariable>
         <active>true</active>
-        <codePool>community</codePool>
+        <codePool>local</codePool>
      </QuBit_UniversalVariable>
    </modules>
    <frontend>

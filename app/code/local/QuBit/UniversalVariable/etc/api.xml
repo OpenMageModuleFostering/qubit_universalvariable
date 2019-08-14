@@ -1,0 +1,19 @@
+<!-- api.xml -->
+<config>
+  <api>
+    <resources>
+      <universal_variable translate="title" module="tutorial">
+        <title>GrelaDesign tutorial DashBoard app API calls</title>
+        <model>universal_variable/main_api</model>
+        <acl>greladesign/tutorial</acl>
+        <methods>
+          <getUniversalVariable translate="title" module="tutorial">
+            <title>Get Universal Variable</title>
+            <method>getUniversalVariable</method><!-- here we specify the method name if we have a conflict with built in method or we want to change the name i.e. because it is lengthy -->
+            <acl>greladesign/tutorial/owneraccess</acl>
+          </getUniversalVariable>
+        </methods>
+      </universal_variable>
+    </resources>
+  </api>
+</config>
