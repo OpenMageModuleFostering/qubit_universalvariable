@@ -1,22 +1,34 @@
 <?xml version="1.0"?>
 <package>
     <name>QuBit_UniversalVariable</name>
-    <version>1.0.9</version>
+    <version>1.3.0</version>
     <stability>stable</stability>
     <license uri="http://www.opensource.org/licenses/osl-3.0.php">Extension license name (OSL v3.0)</license>
     <channel>community</channel>
     <extends/>
-    <summary>QuBit Universal Variable is our suggested way to structure the data presented on your pages. Affiliates, remarking or advertising tags become easier to implement.&#xD;
+    <summary>Universal Variable provides a standardised JSON structure for data relating to the user journey of your visitors, such user details, products viewed and transactions. Data contained in Universal Variable are pushed automatically to Qubit&#x2019;s platform and Opentag scripts.</summary>
+    <description>Universal Variable provides a standardised JSON structure for data relating to the user journey of your visitors, such user details, products viewed and transactions. Data contained in Universal Variable are pushed automatically to Qubit&#x2019;s platform and Opentag scripts.&#xD;
 &#xD;
-</summary>
-    <description>QuBit OpenTag recommends creating the releavant JavaScript object on your page prior to the OpenTag container script. This will assure the values are present on the page when a script tries to access them.&#xD;
+This extension plugs into your Magento installation and automatically inserts Universal Variable and Opentag to the top of your pages, taking away 99% of the development work of implementing Universal Variable on your site.</description>
+    <notes>Refactored [Thanks firewizard]&#xD;
 &#xD;
-If a page does not have the variables of an object that are mentioned below, simply do not even declare them. For example, if your pages only have category and no subcategory, just declare your category. Likewise, if you feel the need to extend the objects below or feel like renaming them, please do so. However, please take a note of the new variable names or the edited ones, because in order to access them from your scripts in your OpenTag container, you will need to use the new variable names.</description>
-    <notes>output user_id and store language code correctly</notes>
-    <authors><author><name>Jing Dong</name><user>qubitproducts</user><email>jing@qubitdigital.com</email></author></authors>
-    <date>2013-01-23</date>
-    <time>22:33:03</time>
-    <contents><target name="magelocal"><dir name="QuBit"><dir name="UniversalVariable"><dir name="Block"><file name="Uv.php" hash="9b5cd71bebc9576b5d0714b3fe5c13bb"/></dir><dir name="Helper"><file name="Data.php" hash="b05ea847c16520d5e6eec91e9f604886"/></dir><dir name="Model"><dir name="Page"><file name="Observer.php" hash="ec1630d61f81f0a52668191c744f111a"/></dir><file name=".DS_Store" hash="194577a7e20bdcc7afbb718f502c134c"/></dir><dir name="etc"><file name="config.xml" hash="fd936ed3360902482e81d86b6747543c"/><file name="system.xml" hash="944a9a1ca7984eae63f1e2e0800404f9"/><file name=".DS_Store" hash="194577a7e20bdcc7afbb718f502c134c"/></dir><file name=".DS_Store" hash="194577a7e20bdcc7afbb718f502c134c"/></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="default"><dir name="layout"><dir name="qubit"><file name="universal_variable.xml" hash="f568ad884f941850720324d35868c45c"/><file name=".DS_Store" hash="2632898af4a7dd21eb81072ff8eb1f04"/></dir></dir><dir name="template"><dir name="qubit"><file name="universal_variable.phtml" hash="a335515fd0cf17010f281246ae884821"/><file name=".DS_Store" hash="194577a7e20bdcc7afbb718f502c134c"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="QuBit_all.xml" hash="549545c1cf35f87658a129ad5093d13f"/></dir></target></contents>
+Magento version is now under a flag [security by obscurity]&#xD;
+&#xD;
+Options for hiding stock information, using real product IDs and the product id (database entry id) &#xD;
+&#xD;
+Flag to either user real User ID or a hashed version of it&#xD;
+&#xD;
+Product line_items&#xD;
+&#xD;
+Makes sure there is a valid delivery address to stop confirmation page error.&#xD;
+&#xD;
+user has_transacted&#xD;
+&#xD;
+updated branding from QuBit to Qubit</notes>
+    <authors><author><name>Callum Rogan</name><user>rogy</user><email>callum@qubitproducts.com</email></author></authors>
+    <date>2015-01-30</date>
+    <time>12:40:44</time>
+    <contents><target name="magecommunity"><dir name="QuBit"><dir name="UniversalVariable"><dir name="Helper"><file name="Data.php" hash="20ee1c7742638407ae4fc5d4119efb4e"/></dir><dir name="Model"><file name="Observer.php" hash="928c127e4468dc4316ce124dc5711c33"/><file name="Uv.php" hash="8b4ad81aff8955138de89a7ba03dfb23"/></dir><dir name="etc"><file name="adminhtml.xml" hash="e708e1e94c34a3d0340b2c26d142b938"/><file name="config.xml" hash="5c9cb4ad71799e842799cba5130dc219"/><file name="system.xml" hash="d6f80fb4487a5e73de6886d2c909f90d"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="QuBit_UniversalVariable.xml" hash="78415ff310ffbb380e1a95633caf4926"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="template"><dir name="qubit"><file name="uv.phtml" hash="3b639da939fde63dafc3a8ff956e140d"/></dir></dir><dir name="layout"><dir name="qubit"><file name="uv.xml" hash="149b99e8bc633f90cef5700301e12590"/></dir></dir></dir></dir></dir></target><target name="magelocale"><dir name="en_US"><file name="QuBit_UniversalVariable.csv" hash="db8b84cbc643341df36f2ba05275ef71"/></dir></target></contents>
     <compatible/>
-    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.1</max></php></required></dependencies>
 </package>

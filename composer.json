@@ -3,13 +3,11 @@
     "type": "magento-module",
     "license": "Extension-license-name-(OSL-v3.0)",
     "homepage": "",
-    "description": "QuBit Universal Variable is our suggested way to structure the data presented on your pages. Affiliates, remarking or advertising tags become easier to implement.
-
-",
+    "description": "Universal Variable provides a standardised JSON structure for data relating to the user journey of your visitors, such user details, products viewed and transactions. Data contained in Universal Variable are pushed automatically to Qubit’s platform and Opentag scripts.",
     "authors": [
     {
-        "name": "Jing Dong",
-        "email": "jing@qubitdigital.com"
+        "name": "Callum Rogan",
+        "email": "callum@qubitproducts.com"
     }
 ],
     "suggest": {
