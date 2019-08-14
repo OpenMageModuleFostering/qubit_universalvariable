@@ -8,7 +8,7 @@
     </tabs>
 
     <sections>
-        <qubit_universalvariable translate="label">
+        <QuBit_UniversalVariable translate="label">
             <label>Configuration</label>
             <tab>QuBit_tab</tab>
             <frontend_type>text</frontend_type> 
@@ -89,6 +89,6 @@ Your container ID should look like 1234-56789, for example: <br/>
 
 
                 </groups>
-        </qubit_universalvariable>
+        </QuBit_UniversalVariable>
     </sections>
 </config>
