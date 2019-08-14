@@ -1,0 +1,18 @@
+{
+    "name": "OpenMageModuleFostering/QuBit_UniversalVariable",
+    "type": "magento-module",
+    "license": "Extension-license-name-(OSL-v3.0)",
+    "homepage": "",
+    "description": "QuBit Universal Variable is our suggested way to structure the data presented on your pages. Affiliates, remarking or advertising tags become easier to implement.
+
+",
+    "authors": [
+    {
+        "name": "Jing Dong",
+        "email": "jing@qubitdigital.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
