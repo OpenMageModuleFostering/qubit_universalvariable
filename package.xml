@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
     <name>QuBit_UniversalVariable</name>
-    <version>1.0.21</version>
+    <version>1.0.22</version>
     <stability>stable</stability>
     <license uri="http://www.opensource.org/licenses/osl-3.0.php">Extension license name (OSL v3.0)</license>
     <channel>community</channel>
@@ -12,11 +12,11 @@
     <description>QuBit OpenTag recommends creating the releavant JavaScript object on your page prior to the OpenTag container script. This will assure the values are present on the page when a script tries to access them.&#xD;
 &#xD;
 If a page does not have the variables of an object that are mentioned below, simply do not even declare them. For example, if your pages only have category and no subcategory, just declare your category. Likewise, if you feel the need to extend the objects below or feel like renaming them, please do so. However, please take a note of the new variable names or the edited ones, because in order to access them from your scripts in your OpenTag container, you will need to use the new variable names.</description>
-    <notes>* Apply voucher discount on top of product unit_sale_price. GitHub issue #35</notes>
+    <notes>Fix #39: when shipping method is not provided, export as empty string instead of null.</notes>
     <authors><author><name>Jing Dong</name><user>qubitproducts</user><email>jing@qubitdigital.com</email></author></authors>
-    <date>2014-04-07</date>
-    <time>16:23:59</time>
-    <contents><target name="magecommunity"><dir name="QuBit"><dir name="UniversalVariable"><dir name="Block"><file name="Uv.php" hash="9b5cd71bebc9576b5d0714b3fe5c13bb"/></dir><dir name="Helper"><file name="Data.php" hash="b05ea847c16520d5e6eec91e9f604886"/></dir><dir name="Model"><dir name="Page"><file name="Observer.php" hash="ba0227af39ad69cc95c25ee81a24bb5b"/></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="35f6ea94bc8984d18119a6fc5e63ec9f"/><file name="config.xml" hash="fa918eeac4d6e2b9692642b23789d7c8"/><file name="system.xml" hash="26e9e0d4d1559c8c5fbb69fe707e43a3"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><dir name="qubit"><file name="universal_variable.xml" hash="d492e66356dadf46ead546118d8b91ac"/></dir></dir><dir name="template"><dir name="qubit"><file name="universal_variable.phtml" hash="1775b4ca50c1df8e9542dd2c7bcd14f1"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="QuBit_all.xml" hash="a0b70506c32aeeb4198d59d86a019ec9"/></dir></target></contents>
+    <date>2014-04-24</date>
+    <time>09:37:36</time>
+    <contents><target name="magecommunity"><dir name="QuBit"><dir name="UniversalVariable"><dir name="Block"><file name="Uv.php" hash="9b5cd71bebc9576b5d0714b3fe5c13bb"/></dir><dir name="Helper"><file name="Data.php" hash="b05ea847c16520d5e6eec91e9f604886"/></dir><dir name="Model"><dir name="Page"><file name="Observer.php" hash="310b8798c401a6d313754841389493e3"/></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="35f6ea94bc8984d18119a6fc5e63ec9f"/><file name="config.xml" hash="fa918eeac4d6e2b9692642b23789d7c8"/><file name="system.xml" hash="26e9e0d4d1559c8c5fbb69fe707e43a3"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><dir name="qubit"><file name="universal_variable.xml" hash="d492e66356dadf46ead546118d8b91ac"/></dir></dir><dir name="template"><dir name="qubit"><file name="universal_variable.phtml" hash="1775b4ca50c1df8e9542dd2c7bcd14f1"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="QuBit_all.xml" hash="a0b70506c32aeeb4198d59d86a019ec9"/></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
 </package>
