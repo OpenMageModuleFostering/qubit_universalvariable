@@ -1,3 +1,5 @@
+
+
 ## Original Package Description
 
 Universal Variable provides a standardised JSON structure for data relating to the user journey of your visitors, such user details, products viewed and transactions. Data contained in Universal Variable are pushed automatically to Qubit’s platform and Opentag scripts.
